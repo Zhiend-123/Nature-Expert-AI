@@ -1,7 +1,6 @@
-streamlit~=1.54.0
+streamlit
 google-generativeai
-Pillow~=12.1.1
-numpy
-protobuf~=5.29.6
-exif~=1.6.1
-folium~=0.20.0
+pillow
+exif
+folium
+streamlit-folium
