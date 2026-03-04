@@ -2,5 +2,3 @@
 __pycache__/
 *.pkl
 .streamlit/secrets.toml
-info.txt
-main.py
