@@ -1,0 +1,12 @@
+#
+#"pip install -r requirements.txt"
+#
+# import google.generativeai as genai
+# genai.configure(api_key="AIzaSyB1Bu1tLvt_raHE_RDXsI6jhUvL5M1skfQ")
+# for m in genai.list_models():
+#     if 'generateContent' in m.supported_generation_methods:
+#         print(m.name)
+
+"api-key = AIzaSyB1Bu1tLvt_raHE_RDXsI6jhUvL5M1skfQ"
+
+"models/gemini-2.5-flash"
