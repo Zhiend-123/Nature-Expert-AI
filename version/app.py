@@ -156,4 +156,4 @@ with tab2:
                             save_history(st.session_state.full_history)
                             st.rerun()
 st.divider()
-st.caption("Nature Expert AI v1.2 | Разработано для исследователей природы. ИИ может ошибаться, будьте внимательны.")
+st.caption("Nature Expert AI v2 | Разработано для исследователей природы. ИИ может ошибаться, будьте внимательны.")
