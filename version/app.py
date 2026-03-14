@@ -6,15 +6,15 @@ from streamlit_folium import folium_static
 import folium
 from datetime import datetime
 
-st.set_page_config(
-    page_title="Nature Expert AI",
-    page_icon="🌿",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
+# st.set_page_config(
+#     page_title="Nature Expert AI",
+#     page_icon="🌿",
+#     layout="wide",
+#     initial_sidebar_state="expanded"
+# )
 
 try:
-    with open("assets/style.css", "r", encoding="utf-8") as f:
+    with open("../assets/style.css", "r", encoding="utf-8") as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 except FileNotFoundError:
     st.warning("Файл стилей assets/style.css не найден. Используются стандартные настройки.")
@@ -99,7 +99,6 @@ with tab2:
     if not st.session_state.full_history:
         st.info("Ваша история пока пуста. Проведите свой первый анализ в первой вкладке!")
     else:
-        # Секция с картой
         st.subheader("🌍 География ваших находок")
 
         points_with_gps = [e for e in st.session_state.full_history if e.get("coords")]
@@ -111,7 +110,6 @@ with tab2:
 
             for entry in points_with_gps:
                 lat, lon = entry["coords"]
-                # Попытка вытащить название для маркера
                 try:
                     title = entry["text"].split('\n')[2].replace('**НАЗВАНИЕ:**', '').strip()[:40]
                 except:
